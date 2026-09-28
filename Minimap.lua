@@ -1,9 +1,7 @@
 -- Wick's Comforts
 -- Minimap.lua: square minimap.
 --
--- Reshaping is a mask swap, which addons are still allowed to do. Zooming
--- is not: Minimap:SetZoom carries restrictions on this client, so there is
--- no mouse wheel zoom here and the options page says why.
+-- Reshaping is a mask swap, which addons are still allowed to do.
 --
 -- The two clients are built differently. Forever's minimap lives inside
 -- MinimapCluster.MinimapContainer, its round ring is an atlas on

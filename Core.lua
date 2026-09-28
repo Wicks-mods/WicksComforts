@@ -172,7 +172,6 @@ function A:OnEnable()
         local y = O:Heading(page, "Minimap", 0)
         y = toggle("Square minimap", "squareMinimap", y)
         y = toggle("Hide the minimap zoom buttons", "hideMinimapZoom", y)
-        y = O:Note(page, "This client does not let an addon change the minimap zoom level, so there is no mouse wheel zoom here.", y)
 
         y = O:Heading(page, "Tooltips", y - 6)
         y = toggle("Item level on items", "tipItemLevel", y)
