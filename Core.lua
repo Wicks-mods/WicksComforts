@@ -172,6 +172,9 @@ function A:OnEnable()
         local y = O:Heading(page, "Minimap", 0)
         y = toggle("Square minimap", "squareMinimap", y)
         y = toggle("Hide the minimap zoom buttons", "hideMinimapZoom", y)
+        if ns.wicksUIOwnsMinimap and ns.wicksUIOwnsMinimap() then
+            y = O:Note(page, "Wick's UI is looking after the minimap, so these two stand aside while it does. Its own minimap settings are under /wui.", y)
+        end
 
         y = O:Heading(page, "Tooltips", y - 6)
         y = toggle("Item level on items", "tipItemLevel", y)

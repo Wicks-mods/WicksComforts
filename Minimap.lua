@@ -104,8 +104,25 @@ end
 -- Only ever touch what has been asked for, and only put something back if
 -- this addon is what changed it. A switched-off comfort must leave the
 -- frame exactly as another addon or Blizzard left it.
+-- Wick's UI is the full interface replacement and owns the minimap when
+-- its minimap module is on; the two shaping the same frame fight, and
+-- this addon's reassert on every zone change would win. Its saved setting
+-- is read rather than its module's state, because this addon starts first
+-- (alphabetical load order) and Wick's UI's modules are not up yet.
+function ns.wicksUIOwnsMinimap()
+    local w = rawget(_G, "WicksUI")
+    local p = w and w.A and w.A.db and w.A.db.profile
+    local mm = p and p.minimap
+    return mm ~= nil and mm.enable ~= false
+end
+
 function M:Apply()
     if not Minimap then return end
+    if ns.wicksUIOwnsMinimap() then
+        -- Stand aside completely: nothing of ours on the map.
+        if self.border then self.border:Hide() end
+        return
+    end
     local db = ns.db()
 
     if db.squareMinimap then
