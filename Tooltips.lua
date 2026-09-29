@@ -107,6 +107,9 @@ function T:Init()
         if Enum.TooltipDataType.Unit then
             TDP.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(tt)
                 local _, unit = tt:GetUnit()
+                -- The token can be secret (world tooltips in combat or an
+                -- instance); unit calls refuse it, so there is nothing to add.
+                if not unit or R:IsSecret(unit) then return end
                 Core.safe(T.DecorateUnit, T, tt, unit)
             end)
         end
