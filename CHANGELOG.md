@@ -1,5 +1,19 @@
 # Wick's Comforts - Changelog
 
+## 0.9.2 (2026-09-30)
+
+### Changed
+
+- The square minimap stands aside while Wick's UI looks after the
+  minimap, so the two never fight over it.
+- The options no longer say mouse wheel zoom does not work on the
+  minimap. It does.
+
+### Fixed
+
+- A tooltip for a unit the client keeps secret is skipped instead of
+  failing.
+
 ## 0.9.1
 
 ### Arrow keys move the cursor in chat
