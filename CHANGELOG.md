@@ -1,5 +1,14 @@
 # Wick's Comforts - Changelog
 
+## 0.9.3 (unreleased)
+
+### Added
+
+- TBC Classic Anniversary. The same folder and version now load on
+  2.5.6 as well as Forever, on WickCore's TBC build. The old 0.1.0 copy
+  that sat in the TBC AddOns folder, unable to load without WickCore,
+  is gone.
+
 ## 0.9.2 (2026-09-30)
 
 ### Changed
