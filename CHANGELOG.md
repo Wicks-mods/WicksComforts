@@ -9,6 +9,11 @@
   that sat in the TBC AddOns folder, unable to load without WickCore,
   is gone.
 
+### Fixed
+
+- Player names in tooltips take the class colours chosen in WickCore,
+  the game's own set or the Classic era set, like the rest of the suite.
+
 ## 0.9.2 (2026-09-30)
 
 ### Changed
