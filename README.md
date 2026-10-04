@@ -3,7 +3,7 @@
 
 > Small comforts: square minimap, richer tooltips, auto loot, auto repair and junk selling. Everything off until you turn it on.
 
-Part of the **[Wick suite](https://github.com/Wicksmods/WickSuite)**: precision addons built around a single fel-green-on-deep-purple aesthetic. Built on [WickCore](https://github.com/Wicksmods/WickCore).
+Part of the **[Wick suite](https://github.com/Wicks-mods/WickSuite)**: precision addons built around a single fel-green-on-deep-purple aesthetic. Built on [WickCore](https://github.com/Wicks-mods/WickCore).
 
 ## What it is
 
@@ -32,7 +32,7 @@ only wanted bags.
 
 ## Install
 
-Requires **[WickCore](https://github.com/Wicksmods/WickCore)**. Extract both
+Requires **[WickCore](https://github.com/Wicks-mods/WickCore)**. Extract both
 folders into your `Interface\AddOns\`.
 
 ## Usage
@@ -55,4 +55,4 @@ so there is no mouse wheel zoom.
 
 ## License
 
-MIT for code (see [LICENSE](LICENSE)). Brand chrome and the "Wick's" wordmark are trademarked, see [TRADEMARK.md](https://github.com/Wicksmods/WickSuite/blob/main/TRADEMARK.md).
+MIT for code (see [LICENSE](LICENSE)). Brand chrome and the "Wick's" wordmark are trademarked, see [TRADEMARK.md](https://github.com/Wicks-mods/WickSuite/blob/main/TRADEMARK.md).
