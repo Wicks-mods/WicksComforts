@@ -1,6 +1,6 @@
 # Wick's Comforts - Changelog
 
-## Unreleased
+## 0.9.4 (2026-10-09)
 
 ### Fixed
 
